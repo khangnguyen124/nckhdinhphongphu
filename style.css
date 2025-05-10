@@ -1,65 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset và thiết lập chung */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(45deg, #ff6347, #ff4500);
+    padding: 20px 0;
     color: white;
-    padding: 10px 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .navbar h1 {
-    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
+/* Section chung */
 .section {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h2 {
-    color: #333;
+    text-align: center;
 }
 
 .main-image {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Hiệu ứng nút */
+.cta-btn {
+    padding: 12px 25px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e53e2c;
+}
+
+/* Timeline */
 .timeline {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .timeline-item {
@@ -67,36 +99,38 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-textarea {
-    padding: 10px;
-    font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #ddd;
 }
 
-button {
-    padding: 10px;
+/* Parallax */
+.parallax {
+    background-image: url('your-parallax-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 80px 20px;
+}
+
+/* AOS (animation on scroll) */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    margin-top: 50px;
 }
