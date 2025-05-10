@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đình Phong Phú</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -26,24 +29,24 @@
     <!-- Trang chủ -->
     <section id="home" class="section">
         <div class="container">
-            <h2>Chào mừng đến với Đình Phong Phú</h2>
-            <p>Đình Phong Phú, tọa lạc tại Thành phố Hồ Chí Minh, là một trong những di tích lịch sử và văn hóa nổi bật của địa phương.</p>
-            <img src="your-image.jpg" alt="Đình Phong Phú" class="main-image">
+            <h2 data-aos="fade-up">Chào mừng đến với Đình Phong Phú</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Đình Phong Phú, tọa lạc tại Thành phố Hồ Chí Minh, là một trong những di tích lịch sử và văn hóa nổi bật của địa phương.</p>
+            <img src="your-image.jpg" alt="Đình Phong Phú" class="main-image" data-aos="fade-up" data-aos-delay="400">
+            <button class="cta-btn" data-aos="zoom-in" data-aos-delay="600">Khám Phá Ngay</button>
         </div>
     </section>
 
     <!-- Lịch sử -->
     <section id="history" class="section">
         <div class="container">
-            <h2>Lịch Sử Đình Phong Phú</h2>
-            <p>Đình Phong Phú được xây dựng vào thế kỷ 18, là nơi thờ các vị thần bảo vệ cộng đồng. Qua các thời kỳ, đình đã chứng kiến nhiều sự kiện quan trọng...</p>
+            <h2 data-aos="fade-up">Lịch Sử Đình Phong Phú</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Đình Phong Phú được xây dựng vào thế kỷ 18, là nơi thờ các vị thần bảo vệ cộng đồng. Qua các thời kỳ, đình đã chứng kiến nhiều sự kiện quan trọng...</p>
             <div class="timeline">
-                <!-- Timeline -->
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                     <h3>Thế kỷ 18</h3>
                     <p>Đình được xây dựng...</p>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
                     <h3>Thế kỷ 19</h3>
                     <p>Đình đã trở thành nơi tổ chức các lễ hội lớn...</p>
                 </div>
@@ -52,22 +55,22 @@
     </section>
 
     <!-- Tham quan -->
-    <section id="visit" class="section">
+    <section id="visit" class="section parallax">
         <div class="container">
-            <h2>Tham Quan Đình Phong Phú</h2>
-            <p>Đình Phong Phú không chỉ là di tích lịch sử mà còn là một địa điểm tham quan tuyệt vời cho du khách. Bạn có thể dễ dàng đến đây từ các địa điểm nổi bật xung quanh.</p>
-            <div id="map"></div> <!-- Placeholder for interactive map -->
+            <h2 data-aos="fade-up">Tham Quan Đình Phong Phú</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Đình Phong Phú không chỉ là di tích lịch sử mà còn là một địa điểm tham quan tuyệt vời cho du khách.</p>
+            <div id="map" data-aos="zoom-in" data-aos-delay="400"></div> <!-- Placeholder for interactive map -->
         </div>
     </section>
 
     <!-- Sự kiện -->
     <section id="events" class="section">
         <div class="container">
-            <h2>Sự Kiện Văn Hóa</h2>
-            <p>Các sự kiện văn hóa tại Đình Phong Phú rất phong phú, bao gồm các lễ hội truyền thống, các buổi thuyết trình về lịch sử và văn hóa dân tộc.</p>
+            <h2 data-aos="fade-up">Sự Kiện Văn Hóa</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Các sự kiện văn hóa tại Đình Phong Phú rất phong phú, bao gồm các lễ hội truyền thống, các buổi thuyết trình về lịch sử và văn hóa dân tộc.</p>
             <ul>
-                <li>Lễ hội mùa xuân</li>
-                <li>Lễ kỷ niệm ngày thành lập đình</li>
+                <li data-aos="fade-up" data-aos-delay="400">Lễ hội mùa xuân</li>
+                <li data-aos="fade-up" data-aos-delay="600">Lễ kỷ niệm ngày thành lập đình</li>
             </ul>
         </div>
     </section>
@@ -75,10 +78,10 @@
     <!-- Chia sẻ cảm nhận -->
     <section id="feedback" class="section">
         <div class="container">
-            <h2>Chia Sẻ Cảm Nhận</h2>
-            <form action="#">
+            <h2 data-aos="fade-up">Chia Sẻ Cảm Nhận</h2>
+            <form action="#" data-aos="fade-up" data-aos-delay="200">
                 <textarea placeholder="Chia sẻ cảm nhận của bạn về Đình Phong Phú"></textarea>
-                <button type="submit">Gửi</button>
+                <button type="submit" class="cta-btn">Gửi</button>
             </form>
         </div>
     </section>
@@ -87,5 +90,9 @@
     <footer>
         <p>&copy; 2025 Đình Phong Phú. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
