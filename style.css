@@ -7,10 +7,11 @@ body {
     padding: 0;
 }
 header {
-    background-color: #b21723;
-    color: #fff;
+    background-color: #fdf3e3;
+    color: #791b24;
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #b21723; /* Đường line màu đỏ phía dưới */
 }
 .logo img {
     height: 100px;
