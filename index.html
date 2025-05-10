@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -8,19 +7,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Đình Phong Phú">
+        <div class="navbar">
             <h1>Đình Phong Phú</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#history">Lịch Sử</a></li>
+                    <li><a href="#visit">Tham Quan</a></li>
+                    <li><a href="#events">Sự Kiện</a></li>
+                    <li><a href="#feedback">Chia Sẻ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section class="intro">
-        <h2>Giới thiệu về Đình Phong Phú</h2>
-        <p>Đình Phong Phú là một trong 25 di tích lịch sử cấp quốc gia, nằm tại phường Tăng Nhơn Phú B, quận 9, TP. Hồ Chí Minh. 
-        Đình có một vị trí quan trọng trong lịch sử địa phương và là nơi gắn liền với nhiều sự kiện văn hóa, xã hội.</p>
+
+    <!-- Trang chủ -->
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Chào mừng đến với Đình Phong Phú</h2>
+            <p>Đình Phong Phú, tọa lạc tại Thành phố Hồ Chí Minh, là một trong những di tích lịch sử và văn hóa nổi bật của địa phương.</p>
+            <img src="your-image.jpg" alt="Đình Phong Phú" class="main-image">
+        </div>
     </section>
+
+    <!-- Lịch sử -->
+    <section id="history" class="section">
+        <div class="container">
+            <h2>Lịch Sử Đình Phong Phú</h2>
+            <p>Đình Phong Phú được xây dựng vào thế kỷ 18, là nơi thờ các vị thần bảo vệ cộng đồng. Qua các thời kỳ, đình đã chứng kiến nhiều sự kiện quan trọng...</p>
+            <div class="timeline">
+                <!-- Timeline -->
+                <div class="timeline-item">
+                    <h3>Thế kỷ 18</h3>
+                    <p>Đình được xây dựng...</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Thế kỷ 19</h3>
+                    <p>Đình đã trở thành nơi tổ chức các lễ hội lớn...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tham quan -->
+    <section id="visit" class="section">
+        <div class="container">
+            <h2>Tham Quan Đình Phong Phú</h2>
+            <p>Đình Phong Phú không chỉ là di tích lịch sử mà còn là một địa điểm tham quan tuyệt vời cho du khách. Bạn có thể dễ dàng đến đây từ các địa điểm nổi bật xung quanh.</p>
+            <div id="map"></div> <!-- Placeholder for interactive map -->
+        </div>
+    </section>
+
+    <!-- Sự kiện -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2>Sự Kiện Văn Hóa</h2>
+            <p>Các sự kiện văn hóa tại Đình Phong Phú rất phong phú, bao gồm các lễ hội truyền thống, các buổi thuyết trình về lịch sử và văn hóa dân tộc.</p>
+            <ul>
+                <li>Lễ hội mùa xuân</li>
+                <li>Lễ kỷ niệm ngày thành lập đình</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Chia sẻ cảm nhận -->
+    <section id="feedback" class="section">
+        <div class="container">
+            <h2>Chia Sẻ Cảm Nhận</h2>
+            <form action="#">
+                <textarea placeholder="Chia sẻ cảm nhận của bạn về Đình Phong Phú"></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Đình Phong Phú | Thiết kế bởi Người dùng</p>
+        <p>&copy; 2025 Đình Phong Phú. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
